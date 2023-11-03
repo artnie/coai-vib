@@ -1,0 +1,16 @@
+baseurl = "https://intel4coro.github.io/coai-vib/"
+title = "CoAI-ViB"
+author = "yxzhan"
+canonifyurls = true
+paginate = 10
+theme = "aether"
+
+[params]
+    brand = "Research Challenge Laboratories"
+
+[markup]
+  [markup.highlight]
+    style = "igor"
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
