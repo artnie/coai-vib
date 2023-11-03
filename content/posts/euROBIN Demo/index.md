@@ -1,15 +1,15 @@
 ---
-title: "Aether: A Clean Theme for Hugo"
-date: 2018-05-02T14:33:42-04:00
-description: " Aether is new theme for Hugo that emphasizes motion, material, and depth as design elements. Distracting styling and page elements are forgone to focus on the content."
-categories: ["Innovation"]
+title: "euROBIN Demo"
+date: 2023-08-02T14:33:42-04:00
+description: "TIAGo robot in the IAI Bremen apartment laboratory."
+categories: ["Research"]
 dropCap: true
 displayInMenu: false
 displayInList: true
 draft: false
 resources:
 - name: featuredImage
-  src: "https://github.com/Food-Ninja/FoodCutting/raw/main/docs/img/Motivation3.jpg"
+  src: "featuredImage.png"
 ---
 
 Today's web is a frustrating mess of pop-ups, intrusive banners, and ads obstructing the content. I designed aether to be free of all these distractions and simply highlight the content. The result feels more like a native application than a website. Interactions are intuitive, content is the focus, and distractions are omitted.

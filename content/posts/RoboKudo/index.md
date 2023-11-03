@@ -1,8 +1,8 @@
 ---
-title: "Aether: A Clean Theme for Hugo"
-date: 2018-05-02T14:33:42-04:00
-description: " Aether is new theme for Hugo that emphasizes motion, material, and depth as design elements. Distracting styling and page elements are forgone to focus on the content."
-categories: ["Innovation"]
+title: "RoboKudo"
+date: 2023-03-02T14:33:42-04:00
+description: "RoboKudo is a perception framework targeted for robot manipulation tasks. It extends RoboSherlock and its key ideas by a flexible flow control based on behavior trees. It is a multi-expert approach to analyze unstructured sensor data and annotate particular regions of the data given the expertise of specific computer vision algorithms. "
+categories: ["Subsystem"]
 dropCap: true
 displayInMenu: false
 displayInList: true

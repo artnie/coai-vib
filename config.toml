@@ -2,11 +2,11 @@ baseurl = "https://intel4coro.github.io/coai-vib/"
 title = "CoAI-ViB"
 author = "yxzhan"
 canonifyurls = true
-paginate = 10
+paginate = 20
 theme = "aether"
 
 [params]
-    brand = "Research Challenge Laboratories"
+  brand = "CoAI - Interactive Research Space"
 
 [markup]
   [markup.highlight]

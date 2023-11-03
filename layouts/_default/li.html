@@ -11,6 +11,13 @@
     </picture>
   </div>
   {{- end }}
+<!-- 
+  {{ with .Resources.GetMatch "buttons" }}
+    <p>{{ .Permalink }}</p>
+    <iframe frameBorder="0" style="width:100%;height:500px;"
+     src="https://intel4coro.github.io/coai-list/#/widgets/ActionForm?data={{ .Permalink }}">
+    </iframe>
+  {{- end }} -->
   <article class="card-body">
     <h2 class="card-title">{{ .Title | markdownify }}</h2>
     <p class="card-text">{{ if (isset .Params "description") }}{{ index .Params "description" | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}</p>
