@@ -1,15 +1,15 @@
 ---
-title: "PyCRAM"
-date: 2023-02-02T14:33:42-04:00
-description: "PyCRAM is a toolbox for designing, implementing and deploying software on autonomous robots."
-categories: ["Subsystem"]
+title: "Food Cutting Robots"
+date: 2023-09-02T14:33:42-04:00
+description: "This project deals with the problem of teaching robots how to execute unknown tasks in the household domain. The focus of this repository lies on the task of Cutting Food, especially fruits and vegetables."
+categories: ["Research"]
 dropCap: true
 displayInMenu: false
 displayInList: true
 draft: false
 resources:
 - name: featuredImage
-  src: "https://github.com/cram2/pycram/raw/dev/doc/images/pycram_logo.png"
+  src: "Motivation3.jpg"
 ---
 
 Today's web is a frustrating mess of pop-ups, intrusive banners, and ads obstructing the content. I designed aether to be free of all these distractions and simply highlight the content. The result feels more like a native application than a website. Interactions are intuitive, content is the focus, and distractions are omitted.

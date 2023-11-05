@@ -1,15 +1,15 @@
 ---
-title: "Innovator's workbench for Laboratory Environment"
-date: 2023-05-02T14:33:42-04:00
-description: "Robot Agents that assist in laboratories."
-categories: ["Innovation"]
+title: "euROBIN Demo"
+date: 2023-08-02T14:33:42-04:00
+description: "TIAGo robot in the IAI Bremen apartment laboratory."
+categories: ["Research"]
 dropCap: true
 displayInMenu: false
 displayInList: true
 draft: false
 resources:
 - name: featuredImage
-  src: ""
+  src: "eurobin.png"
 ---
 
 Today's web is a frustrating mess of pop-ups, intrusive banners, and ads obstructing the content. I designed aether to be free of all these distractions and simply highlight the content. The result feels more like a native application than a website. Interactions are intuitive, content is the focus, and distractions are omitted.

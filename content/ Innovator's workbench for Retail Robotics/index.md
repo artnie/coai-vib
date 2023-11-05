@@ -9,7 +9,7 @@ displayInList: true
 draft: false
 resources:
 - name: featuredImage
-  src: ""
+  src: "store_mapping.png"
 ---
 
 Today's web is a frustrating mess of pop-ups, intrusive banners, and ads obstructing the content. I designed aether to be free of all these distractions and simply highlight the content. The result feels more like a native application than a website. Interactions are intuitive, content is the focus, and distractions are omitted.
