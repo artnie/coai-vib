@@ -12,6 +12,8 @@ resources:
   src: "buttons.json"
   params:
     height: 300px
+- name: featuredImage
+  src: "picking_up_actions.png"
 ---
 
 <!--more-->
