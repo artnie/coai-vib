@@ -102,20 +102,9 @@
       }
     },
     {
-      "name": "Source Code",
-      "value": "source",
-      "url": "./#/details/0"
-    },
-    {
       "name": "Assets",
       "value": "assets",
       "url": "https://coai-jrc.de/virtual-building/"
-    }
-  ],
-  "videos": [
-    {
-      "name": "Robot Household Marathon: EASE Generative Models of Everyday Activity",
-      "src": "https://www.youtube.com/embed/pv_n9FQRoZQ?si=RDvzEzecesTVWrq7"
     }
   ],
   "software_components": [

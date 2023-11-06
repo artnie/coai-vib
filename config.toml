@@ -1,16 +1,60 @@
 baseurl = "https://intel4coro.github.io/coai-vib/"
+DefaultContentLanguage = "en"
 title = "CoAI-ViB"
-author = "yxzhan"
-canonifyurls = true
+theme = "beautifulhugo"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
 paginate = 20
-theme = "aether"
-
-[params]
-  brand = "CoAI - Interactive Research Space"
-
-[markup]
-  [markup.highlight]
-    style = "igor"
+pygmentsCodefencesGuessSyntax = true
 
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files
+
+[Params]
+ homeTitle = "Interactive Research Space" # Set a different text for the header on the home page
+  subtitle = "Research Challenge Laboratories"
+  mainSections = ["examples","posts"]
+  logo = "favicon-32x32.png" # Expecting square dimensions
+  favicon = "favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = false
+  comments = false
+  readingTime = false
+  wordCount = false
+  useHLJS = true
+  socialShare = false
+  delayDisqus = true
+  showRelatedPosts = true
+#  hideAuthor = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+#  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
+
+
+[[Params.bigimg]]
+ src = "home_cover.jpg"
+ # position: see values of CSS background-position.
+ position = "center top"
+
+[Author]
+  # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
+  website = "https://ai.uni-bremen.de/"
+  email = "info@coai-jrc.de"
+  github = "IntEL4CoRo"
+  youtube = "agkiunibremen"
+
+[[menu.main]]
+    name = ""
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+    
+[[menu.main]]
+    name = "Research"
+    url = "page/about/"
+    weight = 3

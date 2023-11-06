@@ -1,16 +1,18 @@
 ---
-title: "PyCRAM"
-date: 2023-02-02T14:33:42-04:00
-description: "PyCRAM is a toolbox for designing, implementing and deploying software on autonomous robots."
-categories: ["Subsystem"]
+title: "Innovator's workbench for Retail Robotics"
+date: 2023-06-02T14:33:42-04:00
+subtitle: "Robot Agents that work in a retail store."
+tags: ["Innovation"]
 dropCap: true
 displayInMenu: false
 displayInList: true
 draft: false
 resources:
 - name: featuredImage
-  src: "pycram_logo.png"
+  src: "store_mapping.png"
 ---
+
+<!--more-->
 
 Today's web is a frustrating mess of pop-ups, intrusive banners, and ads obstructing the content. I designed aether to be free of all these distractions and simply highlight the content. The result feels more like a native application than a website. Interactions are intuitive, content is the focus, and distractions are omitted.
 
@@ -80,7 +82,7 @@ Make a new blog post by executing `hugo new posts/postnamehere/index.md` in your
 title: "The title of the post"
 date: date the post was generated (automatically generated)
 description: "Description of the post (displayed in the post's card)"
-categories: ["Add comma separated categories here", "another category"]
+tags: ["Add comma separated tags here", "another category"]
 toc: if the post should include a table of contents (true, false)
 displayInMenu: if the post should show up in the navigation menu (true, false)
 displayInList: if the post should be listed on the home page and category pages (true, false)
@@ -98,7 +100,7 @@ resources:
 
 The `displayInMenu` and `displayInList` parameters are used to determine where your content is displayed. Posts typically have displayInMenu set to false so that the post is not a menu option, and displayInList set to true so it shows up on the homepage's list of posts and in category page lists. An About Me page, on the other hand, would have displayInMenu set to true and displayInList set to false.  That will allow the About Me page to be accessible from the menu but not displayed in the homepage's list of posts.
 
-The `categories` parameter is used to group similar posts in category pages. Category pages are accessible from the menu and list all posts within the same category.
+The `tags` parameter is used to group similar posts in category pages. Category pages are accessible from the menu and list all posts within the same category.
 
 The `dropCap` parameter is used to determine if the first letter of a post should be a dropped capital. A dropped capital letter is the large decorative letter at the beginning of a book or section.
 

@@ -1,50 +1,89 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" dir="ltr">
-  {{ partial "head.html" . }}
-  <body class="single-body">
-    {{ partial "nav-bar.html" . }}
-    <main class="content side-text-padding">
-      <article class="post {{ if ne .Params.dropcap false }}dropcase{{ end }}">
-        <header class="post-header">
-          <h1 class="post-title">{{ .Title | markdownify }}</h1>
-          {{ if isset .Params "date" }}<p class="post-date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>{{ end }}
-        </header>
-        {{ with .Resources.GetMatch "featuredImage" -}}
-        <picture class="post-figure">
-          {{ $featured := .Resize "711x Lanczos" }}
-          {{ $featured_2 := .Resize "1422x Lanczos" }}
-          {{ $featured_3 := .Resize "2133x Lanczos" }}
-          <source srcset="{{ $featured.Permalink }} 1x, {{ $featured_2.Permalink }} 2x, {{ $featured_3.Permalink }} 3x">
-          <img src="{{ $featured.Permalink }}" {{ with .Params.description -}} alt="{{ . }}" {{- end }}>
-        </picture>
-        {{ with .Params.attribution -}}
-          <small>Image by&nbsp;
-            {{- with .link }}<a href="{{ . }}" target="_blank" rel="noreferrer noopener">{{ end -}}
-            {{- .name -}}
-            {{- with .link }}</a>{{ end -}}
-          </small>
-        {{- end }}
-        {{- end }}
-        {{ if .Params.toc -}}
-          <h2>Contents</h2>
-          {{ .TableOfContents }}
-        {{- end }}
+{{ define "main" }}
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
         {{ .Content }}
-        {{ with .Resources.GetMatch "ActionButtons" }}
-          <!-- <p>{{ .Permalink }}</p> -->
-          <iframe frameBorder="0" style="width:100%;height:300px;"
-          src="https://intel4coro.github.io/coai-list/#/widgets/ActionForm?data={{ .Permalink }}">
-          </iframe>
-        {{- end }}
+
+        {{ if .Params.tags }}
+          <div class="blog-tags">
+            {{ range .Params.tags }}
+              <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ if $.Param "socialShare" }}
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                {{ partial "share-links" . }}
+              </div>
+            </section>
+        {{ end }}
+
+        {{ if .Site.Params.showRelatedPosts }}
+          {{ range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+            {{ $.Scratch.Set "has_related" true }}
+          {{ end }}
+
+          {{ if $.Scratch.Get "has_related" }}
+                  <h4 class="see-also">{{ i18n "seeAlso" }}</h4>
+                  <ul>
+                {{ $num_to_show := .Site.Params.related_content_limit | default 5 }}
+                {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+              </ul>
+
+          {{ end }}
+        {{ end }}
       </article>
-      {{ template "_internal/disqus.html" . }}
-    </main>
-    <nav class="end-nav side-padding">
-      {{ with .PrevInSection }}
-      {{ .Render "li-next" }}
+
+      {{ if ne .Type "page" }}
+        <ul class="pager blog-pager">
+          {{ if .PrevInSection }}
+            <li class="previous">
+              <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; {{ i18n "previousPost" }}</a>
+            </li>
+          {{ end }}
+          {{ if .NextInSection }}
+            <li class="next">
+              <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">{{ i18n "nextPost" }} &rarr;</a>
+            </li>
+          {{ end }}
+        </ul>
       {{ end }}
-    </nav>
-    {{ partial "footer.html" . }}
-    {{ partial "scripts.html" . }}
-  </body>
-</html>
+
+
+      {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and .Site.Params.comments (ne .Type "page"))) }}
+        {{ if .Site.DisqusShortname }}
+          {{ if .Site.Params.delayDisqus }}
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">{{ i18n "show" }} <span class="disqus-comment-count" data-disqus-url="{{ trim .Permalink "/" }}">{{ i18n "comments" }}</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = '{{ trim .Permalink "/" }}';
+            };
+
+          </script>
+          </div>
+          {{ else }}
+          <div class="disqus-comments">
+            {{ template "_internal/disqus.html" . }}
+          </div>
+          {{ end }}
+        {{ end }}
+        {{ if .Site.Params.staticman }}
+          <div class="staticman-comments">
+            {{ partial "staticman-comments.html" . }}
+          </div>
+        {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+{{ end }}
