@@ -1,0 +1,4 @@
+{{ $data := $.Page.Resources.GetMatch (.Get "data") }}
+<iframe frameBorder="0" style="width:100%;" height="{{ $data.Params.height }}"
+src="https://intel4coro.github.io/coai-list/#/widgets/ActionForm?data={{ $data.Permalink }}">
+</iframe>

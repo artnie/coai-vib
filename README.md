@@ -1,201 +1,145 @@
 <h1 align=center>CoAI Interactive Research Space | <a href="https://intel4coro.github.io/coai-vib/" rel="nofollow">Live Demo</a></h1>
 
+Interactive Research Space pages built with markdown files powered by site generator [Hugo](https://gohugo.io/).
 > This site is based on hugo theme [beautifulhugo](https://github.com/halogenica/beautifulhugo).
 
 ## Installation
 
-Install Hugo and create a new site. See [the Hugo documentation](https://gohugo.io/getting-started/quick-start/) for details.
+### 1. Init git submodule to add hugo theme
 
-### Git Submodule
+    git submodule init
 
-Add Beautifulhugo as git submodule:
+### 2. Install and run Hugo
 
-    $ git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
+#### Option 1: Install Hugo
 
-### Hugo module
+* See [the Hugo documentation](https://gohugo.io/installation/) for details.
+* Run command:
 
-Initialize your site as hugo module:
-
-    $ hugo mod init github.com/USERNAME/SITENAME
-
-Add Beautifulhugo module as a dependency of your site:
-
-    $ hugo mod get github.com/halogenica/beautifulhugo
-
-### Site preview
-
-Copy the content of `exampleSite` at the root of your project:
-
-    cp -r themes/beautifulhugo/exampleSite/* . -iv
-
-If you installed Beautifulhugo as hugo module, set your theme in your config file (hugo.toml):
-
-    [[module.imports]]
-      path = "github.com/halogenica/beautifulhugo"
-
-Start Hugo:
-
-    hugo serve
-
-## Extra Features
-
-### Responsive
-
-This theme is designed to look great on both large-screen and small-screen (mobile) devices.
-
-### Syntax highlighting
-
-This theme has support for either Hugo's lightning fast Chroma, or both server side and client side highlighting. See [the Hugo docs for more](https://gohugo.io/content-management/syntax-highlighting/).
-
-#### Chroma - New server side syntax highlighting
-
-To enable Chroma, add the following to your site parameters:
-
-```
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+```bash
+hugo server
 ```
 
-Then, you can generate a different style by running:
+#### Option 2: Start with docker
 
-```
-hugo gen chromastyles --style=trac > static/css/syntax.css
-```
+* Install Docker, See [Install Docker Engine](https://docs.docker.com/engine/install/) for details.
 
-#### Pygments - Old server side syntax highlighting
+* Run command:
 
-To use this feature install Pygments (`pip install Pygments`) and add the following to your site parameters:
-
-```
-pygmentsStyle = "trac"
-pygmentsUseClassic = true
+```bash
+docker compose up
 ```
 
-Pygments is mostly compatible with the newer Chroma. It is slower but has some additional theme options. I recommend Chroma over Pygments. Pygments will use `syntax.css` for highlighting, unless you also set the config `pygmentsUseClasses = false` which will generate the style code directly in the HTML file. 
+## Site preview
 
-#### Highlight.js - Client side syntax highlighting
-```
-[Params]
-    useHLJS = true
-```
+Open http://localhost:1313/coai-vib/
 
-Client side highlighting does not require pygments to be installed. This will use `highlight.min.css` instead of `syntax.css` for highlighting (effectively disabling Chroma). Highlight.js has a wider range of support for languages and themes, and an alternative highlighting engine.
+## Add/Edit Pages
 
-### Disqus support
-
-To use this feature, uncomment and fill out the `disqusShortname` parameter in `config.toml`.
-
-### Staticman support
-
-Add *Staticman* configuration section in `config.toml` or `config.yaml`
-
-Sample `config.toml` configuration
+Page contents are store in directory [content/posts](content/posts). To add a new page, just create folder under this directory with a markdown file named "index.md". The file "index.md" should content the following metadata:
 
 ```
-[Params.staticman]
-  api = "https://<API-ENDPOINT>/v3/entry/{GIT-HOST}/<USERNAME>/<REPOSITORY-BLOGNAME>/master/comments"
-[Params.staticman.recaptcha]
-      sitekey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
-      secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
+---
+title: "Main title"
+date: 2023-10-03T10:35:35-05:00
+subtitle: "Subtitle"
+tags: ["Research"]
+dropCap: false
+displayInMenu: false
+displayInList: true
+draft: false
+---
+
+# Markdown Content will display in the list preview.
+
+<!--more-->
+
+# Markdown Content only display in detail page.
 ```
 
-Note: The public `API-ENDPOINT` https://staticman.net is currently hitting its API limit, so one may use other API instances to provide Staticman comment service.
+> Example can be found in [content/examples](content/examples) for more details.
 
-The section `[Params.staticman.recaptcha]` is *optional*.  To add reCAPTCHA to your site, you have to replace the default values with your own ones (to be obtained from Google.)  The site `secret` has to be encrypted with
+### Display Options and Buttons
 
-    https://<API-ENDPOINT>/v3/encrypt/<SITE-SECRET>
+![Options and Buttons Screenshot](static/img/widget.png)
 
-You must also configure the `staticman.yml` in you blog website.
-
-```
-comments:
-  allowedFields: ["name", "email", "website", "comment"]
-  branch            : "master"
-  commitMessage     : "New comment in {options.slug}"
-  path: "data/comments/{options.slug}"
-  filename          : "comment-{@timestamp}"
-  format            : "yaml"
-  moderation        : true
-  requiredFields    : ['name', 'email', 'comment']
-  transforms:
-    email           : md5
-  generatedFields:
-    date:
-      type          : "date"
-      options:
-        format      : "iso8601"
-  reCaptcha:
-    enabled: true
-    siteKey: "6LeGeTgUAAAAAAqVrfTwox1kJQFdWl-mLzKasV0v"
-    secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
-```
-
-If you *don't* have the section `[Params.staticman]` in `config.toml`, you *won't* need the section `reCaptcha`  in `staticman.yml`
-
-### Site Disclaimer
-
-If you need to put a Disclaimer on your website (e.g. "My views are my own and not my employer's"), you can do so via the following:
-
-* Uncomment and edit the `disclaimerText` parameter in `config.toml`.
-* If you need to adjust the disclaimer's styling, modify the declarations within the `footer div.disclaimer` selector in `static/css/main.css`.
-
-> The code for the disclaimer text is in `layouts/partials/footer.html`.  Moving this code block to another partial file (or relocating it within `footer.html`) will require changes to the css selector in `main.css` as well.
-
-### Google Analytics
-
-To add Google Analytics, simply sign up to [Google Analytics](https://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `googleAnalytics` parameter in `config.toml`.
-
-Note that the Google Analytics tracking code will only be inserted into the page when the site isn't served on Hugo's built-in server, to prevent tracking from local testing environments.
-
-### Commit SHA on the footer
-
-If the source of your site is in a Git repo, the SHA corresponding to the commit the site is built from can be shown on the footer. To do so, two site parameters `commit` has to be defined in the config file `config.toml`:
+To display the above UI widgets, you need to provide a json file as resource in the "index.md" metadata:
 
 ```
-enableGitInfo = true
-[Params]
-  commit = "https://github.com/<username>/<siterepo>/tree/"
+---
+...
+
+resources:
+- name: ActionButtons
+  src: "buttons.json"
+...
+---
 ```
 
-See at [vincenttam/vincenttam.gitlab.io](https://gitlab.com/vincenttam/vincenttam.gitlab.io) for an example of how to add it to a continuous integration system.
-
-### Multilingual
-
-To allow Beautiful Hugo to go multilingual, you need to define the languages
-you want to use inside the `languages` parameter on `config.toml` file, also
-redefining the content dir for each one. Check the `i18n/` folder to see all
-languages available.
-
-```toml
-[languages]
-  [languages.en] 
-    contentDir = "content/en" # English
-  [languages.ja]
-    contentDir = "content/ja" # Japanese
-  [languages.br]
-    contentDir = "content/br" # Brazilian Portuguese
+```json
+{
+  "options": {
+    "{{Option Label}}": [
+      {
+        "name": "Household",
+        "value": "household",
+        "img": "./images/household.png",
+        "knowledge_bases": "knowledge_bases": "{{OpenEASE Url}}"
+      },
+      ...
+    ],
+    "robots": [
+      {
+        "name": "PR2",
+        "value": "pr2",
+        "img": "{{Image url}}",
+        "knowledge_bases": "{{OpenEASE Url}}"
+      },
+      ...
+    ],
+    ...
+  },
+  "actions": [
+    {
+      "name": "{{Button Label}}",
+      "value": "run",
+      "description": "Run code on Binderhub.",
+      "primary": true,
+      "url": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/COAI/master?urlpath=lab%2Ftree%2Fnotebooks%2F",
+      // If the button url depends on the dropdown select boxs define above
+      "options": [
+        "environments",
+        "robots",
+        "tasks"
+      ],
+      // Define available options
+      "available": {
+        "environments=apartment|robots=tiago|tasks=setting_table": "apartment_tiago.ipynb",
+        "environments=apartment|robots=pr2|tasks=setting_table": "apartment_pr2.ipynb",
+        "environments=household|robots=donbot|tasks=setting_table": "household_donbot_setting_table.ipynb",
+        "environments=household|robots=pr2|tasks=setting_table": "household_pr2_setting_table.ipynb",
+        "environments=household|robots=tiago|tasks=setting_table": "household_tiago_setting_table.ipynb",
+        "environments=household|robots=pr2|tasks=popcorn": "https://binder.intel4coro.de/v2/gh/IntEL4CoRo/cram_teaching/legacy?urlpath=lab%2Ftree%2Flectures%2Fdemos%2Fpopcorn.ipynb"
+      }
+    },
+    // Minimium button config
+    {
+      "name": "Github",
+      "value": "github",
+      "description": "Source code",
+      "url": "https://github.com/",
+    }
+  ]
+}
 ```
 
-Now you just need to create a subdir within the `content/` folder for each
-language and just put stuff inside `page/` and `post/` regular directories.
-```
-content/      content/      content/  
-└── en/       └── br/       └── ja/ 
-    ├── page/     ├── page/     ├── page/
-    └── post/     └── post/     └── post/
+> Example: [button.json](content/posts/Researcher's%20workbench%20for%20Household%20Robotics/buttons.json)
 
-```
+> Note: Currently the widget can not be previewed under development environment, should be fixed in the future.
 
-### Self Hosted assets for GDPR / EU-DSGVO compliance
+## Development
 
-With default settings, visiting to a website using Beautifulhugo connects also to remote services like google fonts or jsdelivr to embed fonts, js and other assets.
-
-To avoid this, set the following param in config.toml:
-
-```
-[Params]
-  selfHosted = true
-```
+To modify the HTML templates under directory [layouts](layouts), please read the [Hugo Documentation](https://gohugo.io/documentation/).
 
 ### Extra shortcodes
 
@@ -236,9 +180,15 @@ author:
   discord: 96VAXXvjCB
 ```
 
-## About
+## Helpful Links
 
-This is an adaptation of the Jekyll theme [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/) by [Dean Attali](https://deanattali.com/aboutme#contact). It supports most of the features of the original theme, and many new features. It has diverged from the Jekyll theme over time, with years of community updates.
+[Hugo Documentation](https://gohugo.io/documentation/) - Learn how to use Hugo
+
+[Beautiful Hugo Theme](https://github.com/halogenica/beautifulhugo) - Overwrite theme
+
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) - Write in markdown like a pro
+
+[Latex Math Documentation](https://en.wikibooks.org/wiki/LaTeX/Mathematics) - Learn math typesetting with LaTeX (powered by KaTeX)
 
 ## License
 

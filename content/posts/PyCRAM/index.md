@@ -11,4 +11,8 @@ resources:
 - name: featuredImage
   src: "pycram_logo.png"
 ---
+
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/IntEL4CoRo/pycram/binder-xpra?urlpath=lab%2Ftree%2Fexamples%2Faction_designator.ipynb%3Frobot%3Dpr2%26environment%3Dkitchen">Run Code</a>
+<a class="btn btn-success" target="_blank" href="https://github.com/cram2/pycram">Source Code</a>
+
 <!--more-->

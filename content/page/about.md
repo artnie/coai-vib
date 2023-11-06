@@ -1,5 +1,5 @@
 ---
-title: About Us
+title: About Interactive Research Space
 subtitle: "**************"
 comments: false
 ---

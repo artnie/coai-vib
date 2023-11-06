@@ -14,8 +14,8 @@ pygmentsCodefencesGuessSyntax = true
 [Params]
  homeTitle = "Interactive Research Space" # Set a different text for the header on the home page
   subtitle = "Research Challenge Laboratories"
-  mainSections = ["examples","posts"]
-  logo = "favicon-32x32.png" # Expecting square dimensions
+  mainSections = ["posts"]
+  logo = "img/logo.png" # Expecting square dimensions
   favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
@@ -33,7 +33,15 @@ pygmentsCodefencesGuessSyntax = true
 
 
 [[Params.bigimg]]
- src = "home_cover.jpg"
+ src = "img/home_cover.jpg"
+ # position: see values of CSS background-position.
+ position = "center top"
+[[Params.bigimg]]
+ src = "img/20230118_Image_UniBielefeld_Pollmeier_00419-scaled.jpg"
+ # position: see values of CSS background-position.
+ position = "center top"
+[[Params.bigimg]]
+ src = "img/20230118_COAI_Patrick-Pollmeier_00710-e1681142676448.jpg"
  # position: see values of CSS background-position.
  position = "center top"
 
