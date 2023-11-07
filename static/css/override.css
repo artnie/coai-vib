@@ -5,3 +5,9 @@ details summary {
 .btn {
   color:white !important;
 }
+
+.sc-image {
+ display: inline;
+ margin: 0;
+ max-width: 100%;
+}
