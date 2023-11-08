@@ -1,7 +1,7 @@
 ---
 title: "Innovator's workbench for Retail Robotics"
 date: 2023-06-02T14:33:42-04:00
-subtitle: "Robot Agents that work in a retail store."
+subtitle: ""
 tags: ["Innovation"]
 dropCap: true
 displayInMenu: false
@@ -13,5 +13,7 @@ resources:
   params:
     height: 260px
 ---
+
+Robot Agents that work in a retail store.
 
 <!--more-->

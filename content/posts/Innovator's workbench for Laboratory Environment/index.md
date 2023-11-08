@@ -1,7 +1,7 @@
 ---
 title: "Innovator's workbench for Laboratory Environment"
 date: 2023-05-02T14:33:42-04:00
-subtitle: "Robot Agents that assist in laboratories."
+subtitle: ""
 tags: ["Innovation"]
 dropCap: true
 displayInMenu: false
@@ -13,5 +13,7 @@ resources:
   params:
     height: 260px
 ---
+
+Robot Agents that assist in laboratories.
 
 <!--more-->

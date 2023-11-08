@@ -16,6 +16,8 @@ resources:
   src: "picking_up_actions.png"
 ---
 
+This project deals with the problem of teaching robots how to execute unknown tasks in the household domain.
+
 <!--more-->
 
 ![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
@@ -32,6 +34,7 @@ Interactive Actions and/or Examples
 
 {{<action_form data="ActionButtons">}}
 
+
 Description
 ---
 
@@ -44,7 +47,7 @@ Example Videos
 ---
 
 <figure class="video_container">
-  <iframe width="100%" height="360" src="https://www.youtube.com/embed/pv_n9FQRoZQ?si=j3CB2Sj4itd_1qlC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="100%" height="360" src="https://www.youtube.com/embed/pv_n9FQRoZQ?si=j3CB2Sj4itd_1qlC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
 </figure>
 
 
