@@ -10,13 +10,11 @@ draft: false
 resources:
 - name: ActionButtons
   src: "buttons.json"
-  params:
-    height: 300px
-- name: featuredImage
-  src: "picking_up_actions.png"
 ---
 
 This project deals with the problem of teaching robots how to execute unknown tasks in the household domain.
+
+{{<action_form data="ActionButtons">}}
 
 <!--more-->
 
@@ -29,11 +27,6 @@ TODOShortIntroTextAndOrQuote
 
 Interactive Actions and/or Examples
 ---
-
-<!-- <iframe frameBorder="0" style="width:100%;height:300px;" src="https://intel4coro.github.io/coai-list/#/widgets/ActionForm?data=/coai-list/household.json"></iframe> -->
-
-{{<action_form data="ActionButtons">}}
-
 
 Description
 ---

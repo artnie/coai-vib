@@ -4,7 +4,7 @@
       {
         "name": "Household",
         "value": "household",
-        "img": "./images/household.png",
+        "img": "https://intel4coro.github.io/coai-list/images/household.png",
         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=64ccc8bc24cdd341ebdb2aa3&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
       },
       {
@@ -14,7 +14,7 @@
       {
         "name": "Apartment",
         "value": "apartment",
-        "img": "./images/apartment.png",
+        "img": "https://intel4coro.github.io/coai-list/images/apartment.png",
         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=64ccbe76181caf1b5ed3c19c&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
       }
     ],
@@ -22,13 +22,13 @@
       {
         "name": "PR2",
         "value": "pr2",
-        "img": "./images/pr2_urdf_white1.png",
+        "img": "https://intel4coro.github.io/coai-list/images/pr2_urdf_white1.png",
         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=6526790ced1a1bfc415a1d38&q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29"
       },
       {
         "name": "Tiago",
         "value": "tiago",
-        "img": "./images/tiago_urdf_white1.png",
+        "img": "https://intel4coro.github.io/coai-list/images/tiago_urdf_white1.png",
         "knowledge_bases": "https://data.open-ease.org/QA?neem_id=630614f0ff954448f792b2c3&q=findall([Duration%2C Evt]%2C ( event_interval(Evt%2C Begin%2C End)%2C number(End)%2C Duration is End - Begin )%2C Durations)%2C max_member([MaxDuration%2C LongestEvt]%2C Durations)."
       },
       {
@@ -38,7 +38,7 @@
       {
         "name": "Donbot",
         "value": "donbot",
-        "img": "./images/donbot_urdf_white1.png"
+        "img": "https://intel4coro.github.io/coai-list/images/donbot_urdf_white1.png"
       }
     ],
     "tasks": [

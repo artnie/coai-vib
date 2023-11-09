@@ -10,9 +10,9 @@ draft: false
 resources:
 - name: ActionButtons
   src: "buttons.json"
-  params:
-    height: 260px
 ---
+
+{{<action_form data="ActionButtons">}}
 
 Robot Agents that work in a retail store.
 

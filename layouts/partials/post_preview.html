@@ -26,11 +26,6 @@
         {{ .Content }}
         {{ end }}
     </div>
-    {{ with .Resources.GetMatch "ActionButtons" }}
-    <iframe frameBorder="0" style="width:100%;" height="{{- .Params.height }}"
-        src="https://intel4coro.github.io/coai-list/#/widgets/ActionForm?data={{ .Permalink }}">
-        </iframe>
-    {{ end }}
     {{ if .Params.tags }}
     <div class="blog-tags">
         {{ range .Params.tags }}
