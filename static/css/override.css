@@ -29,7 +29,14 @@ details summary {
 }
 
 .sc-image {
- display: inline;
- margin: 0;
- max-width: 100%;
+  display: inline;
+  margin: 0;
+  max-width: 100%;
+}
+
+param.preview + div.vue-app {
+  display: none;
+}
+div.post-entry param.preview + div.vue-app {
+  display: block;
 }

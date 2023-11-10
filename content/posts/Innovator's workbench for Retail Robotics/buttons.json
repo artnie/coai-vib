@@ -4,7 +4,7 @@
       {
         "name": "Retail",
         "value": "retail",
-        "img": "https://intel4coro.github.io/coai-list/images/retail.png"
+        "img": "https://intel4coro.github.io/coai-vib/img/retail.png"
       },
       {
         "name": "Waterfront DM Store",
@@ -15,7 +15,7 @@
       {
         "name": "PR2",
         "value": "pr2",
-        "img": "https://intel4coro.github.io/coai-list/images/pr2_urdf_white1.png",
+        "img": "https://intel4coro.github.io/coai-vib/img/pr2_urdf_white1.png",
         "knowledge_bases": "https://data.open-ease.org/QA?q=findall%28%5BDuration%2C%20Evt%5D%2C%0A%20%20%28%20%20event_interval%28Evt%2C%20Begin%2C%20End%29%2C%0A%20%20%20%20%20number%28End%29%2C%0A%20%20%20%20%20Duration%20is%20End%20-%20Begin%0A%20%20%29%2C%0A%20%20Durations%29%2C%0Amax_member%28%5BMaxDuration%2C%20LongestEvt%5D%2C%20Durations%29."
       },
       {
@@ -25,7 +25,7 @@
       {
         "name": "Donbot",
         "value": "donbot",
-        "img": "https://intel4coro.github.io/coai-list/images/donbot_urdf_white1.png"
+        "img": "https://intel4coro.github.io/coai-vib/img/donbot_urdf_white1.png"
       }
     ]
   },

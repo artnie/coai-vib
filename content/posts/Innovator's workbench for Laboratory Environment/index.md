@@ -12,8 +12,9 @@ resources:
   src: "buttons.json"
 ---
 
-{{<action_form data="ActionButtons">}}
-
 Robot Agents that assist in laboratories.
+
+<param class="preview">
+{{<action_form data="ActionButtons">}}
 
 <!--more-->
