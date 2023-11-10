@@ -7,8 +7,7 @@ Interactive Research Space pages built with markdown files powered by site gener
 
 ### 1. Init git submodule to add hugo theme
 
-    git submodule init
-    git submodule update 
+    git submodule update --init
 
 ### 2. Install and run Hugo
 
