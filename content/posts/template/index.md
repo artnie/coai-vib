@@ -6,13 +6,16 @@ tags: ["template"]
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: false
+draft: true
 resources:
 - name: ActionButtons
   src: "buttons.json"
 ---
 
 TODOShortDescription
+
+<param class="preview">
+{{<action_form data="ActionButtons">}}
 
 <!--more-->
 
@@ -23,8 +26,6 @@ TODOShortIntroTextAndOrQuote
 
 Interactive Actions and/or Examples
 ---
-
-<!-- <iframe frameBorder="0" style="width:100%;height:300px;" src="https://intel4coro.github.io/coai-list/#/widgets/ActionForm?data=/coai-list/household.json"></iframe> -->
 
 {{<action_form data="ActionButtons">}}
 

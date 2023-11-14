@@ -3,40 +3,66 @@
 Interactive Research Space pages built with markdown files powered by site generator [Hugo](https://gohugo.io/).
 > This site is based on hugo theme [beautifulhugo](https://github.com/halogenica/beautifulhugo).
 
+
+## Contribute
+
+To contribute to the content of the website, do the following steps:
+
+  1. Create your own fork of the repository, see [Fork A Repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) for details.
+  2. Clone the files of your fork repository to your local computer (see also fork page for details).
+  3. Open a terminal in the newly created project directory and follow the "Installation" instructions to setup and start a local hugo server.
+  4. Go to your directory in "content/posts" and edit the "index.md" file to change the corresponding web page according to your wishes.
+  5. Commit changes to the (fork) repository
+  6. After all changes and redesigns are finalized, start a pull request to transfer the fork changes to the main repository, see [Creating A Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for details.
+
+
 ## Installation
 
 ### 1. Init git submodule to add hugo theme
 
-    git submodule update --init
+```bash
+git submodule update --init
+```
 
-### 2. Install and run Hugo
+### 2. Install Hugo
 
-#### Option 1: Install Hugo
-
+* On Linux Debian run command:
+  ```bash
+  sudo apt install hugo
+  ```
 * See [the Hugo documentation](https://gohugo.io/installation/) for details.
-* Run command:
 
-```bash
-hugo server
-```
-
-#### Option 2: Start with docker
-
-* Install Docker, See [Install Docker Engine](https://docs.docker.com/engine/install/) for details.
+### 3. Start Hugo
 
 * Run command:
+  ```bash
+  hugo server --buildDrafts
+  ```
+  to start a local dev Hugo server with adress: [http://localhost:1313/coai-vib/]()
 
-```bash
-docker compose up
-```
+
+### Option 4. Start with docker
+
+* Install Docker, see [Install Docker Engine](https://docs.docker.com/engine/install/) for details.
+
+* Run command:
+
+  ```bash
+  docker compose up
+  ```
 
 ## Site preview
 
-Open http://localhost:1313/coai-vib/
+Open [http://localhost:1313/coai-vib/]()
 
 ## Add/Edit Pages
 
-Page contents are store in directory [content/posts](content/posts). To add a new page, just create folder under this directory with a markdown file named "index.md". The file "index.md" should content the following metadata:
+Page contents are store in directory [content/posts](). To add a new page, just copy the directory [template](content/posts/template), rename it and edit the therein contained file "index.md" to change the corresponding web page according to your wishes.
+***Warnung:*** Ensure to change line 9 from "draft: true"to "draft: false", otherwise your web page will be invisible when published.
+
+You can also take a look at the [Household Robotics Project](<content/posts/Researcher's workbench for Household Robotics/>) and its "index.md" file as a good example.
+
+Alternative just create a folder under the [content/posts]() directory with a markdown file named "index.md". The file "index.md" should contain the following metadata:
 
 ```
 ---
@@ -134,8 +160,6 @@ resources:
 ```
 
 > Example: [button.json](content/posts/Researcher's%20workbench%20for%20Household%20Robotics/buttons.json)
-
-> Note: Currently the widget can not be previewed under development environment, should be fixed in the future.
 
 ## Development
 
