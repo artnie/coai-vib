@@ -11,9 +11,22 @@ draft: false
 
 RoboCup is an annual international robotics competition with the aim to promote robotics and AI research by offering a publicly appealing challenge.
 
+<div class="hidde-after-preview">
 <a class="btn btn-primary" disabled target="_blank">Run Code</a>
 <a class="btn btn-success" disabled target="_blank">Experimental Data</a>
 <a class="btn btn-success" disabled target="_blank">Source Code</a>
 <a class="btn btn-success" disabled target="_blank">Assets</a>
+</div>
 
 <!--more-->
+
+
+Interactive Actions and/or Examples
+---
+
+<div>
+<a class="btn btn-primary" disabled target="_blank">Run Code</a>
+<a class="btn btn-success" disabled target="_blank">Experimental Data</a>
+<a class="btn btn-success" disabled target="_blank">Source Code</a>
+<a class="btn btn-success" disabled target="_blank">Assets</a>
+</div>

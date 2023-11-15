@@ -18,3 +18,9 @@ Robot Agents that assist in laboratories.
 {{<action_form data="ActionButtons">}}
 
 <!--more-->
+
+
+Interactive Actions and/or Examples
+---
+
+{{<action_form data="ActionButtons">}}

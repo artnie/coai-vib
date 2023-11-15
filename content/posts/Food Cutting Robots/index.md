@@ -15,9 +15,20 @@ You can
 <a class="btn btn-success" target="_blank" href="https://food-ninja.github.io/FoodCutting/Webinterface.html"><b>try out the web interface</b></a>
 to get an idea on how a robot would parameterise cutting actions.
 
-
+<div class="hidde-after-preview">
 <a class="btn btn-primary" disabled target="_blank">Run Simulation</a>
 <a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2Fnotebooks%2FFoodCuttingQueries.ipynb">Inspect Knowledge Graph</a>
 <a class="btn btn-success" target="_blank" href="https://github.com/Food-Ninja/FoodCutting">Source Code</a>
+</div>
 
 <!--more-->
+
+
+Interactive Actions and/or Examples
+---
+
+<div>
+<a class="btn btn-primary" disabled target="_blank">Run Simulation</a>
+<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2Fnotebooks%2FFoodCuttingQueries.ipynb">Inspect Knowledge Graph</a>
+<a class="btn btn-success" target="_blank" href="https://github.com/Food-Ninja/FoodCutting">Source Code</a>
+</div>
