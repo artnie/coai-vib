@@ -14,7 +14,7 @@ resources:
 
 Robot Agents that work in a retail store.
 
-<param class="preview">
+<param class="hidde-after-preview">
 {{<action_form data="ActionButtons">}}
 
 <!--more-->

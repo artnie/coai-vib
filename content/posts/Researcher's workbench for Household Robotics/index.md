@@ -14,7 +14,7 @@ resources:
 
 This project deals with the problem of teaching robots how to execute unknown tasks in the household domain.
 
-<param class="preview">
+<param class="hidde-after-preview">
 {{<action_form data="ActionButtons">}}
 
 <!--more-->

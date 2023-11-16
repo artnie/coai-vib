@@ -34,9 +34,9 @@ details summary {
   max-width: 100%;
 }
 
-param.preview + div.vue-app, div.hidde-after-preview {
+param.hidde-after-preview + *, div.hidde-after-preview {
   display: none;
 }
-div.post-entry param.preview + div.vue-app, div.post-entry div.hidde-after-preview {
+div.post-entry param.hidde-after-preview + *, div.post-entry div.hidde-after-preview {
   display: block;
 }
