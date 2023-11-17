@@ -71,32 +71,6 @@
   </div>
 </footer>
 
-<script type="text/javascript">
-// disable some elements, if in iframe
-if (window.top != window.self) { 
-  // header with big image
-  const header = document.querySelector("header.header-section.has-img");
-  if (header != null) {
-    header.style.display = "none";
-    //header.remove();
-    
-    // navbar
-    const navbar = document.querySelector("nav.navbar");
-    if (navbar != null ) {
-      navbar.style.display = "none";
-      //navbar.remove();
-    }
-    
-    // footer
-    footer = document.querySelector("footer");
-    if (footer != null) {
-      footer.style.display = "none";
-      //footer.remove();
-    }
-  }
-}
-</script>
-
 {{- if .Site.Params.selfHosted -}}
 <script defer src="{{ "js/katex.min.js" | absURL }}"></script>
 <script defer src="{{ "js/auto-render.min.js" | absURL }}" onload="renderMathInElement(document.body);"></script>
