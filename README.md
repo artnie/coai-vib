@@ -15,6 +15,11 @@ To contribute to the content of the website, do the following steps:
   5. Commit changes to the (fork) repository
   6. After all changes and redesigns are finalized, start a pull request to transfer the fork changes to the main repository, see [Creating A Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for details.
 
+Notes:
+
+  * Use the localhost function as a preview to check that all links, images and videos work and that the overall design looks good.
+  * To embed a YouTube-Video correctly, the ***embedded*** link must be used. Go to YouTube-Video -> "Share"-button -> "Embed" -> Use the iframe link
+
 
 ## Installation
 
