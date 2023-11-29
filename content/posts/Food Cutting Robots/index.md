@@ -3,7 +3,7 @@ title: "Food Cutting Robots"
 date: 2023-09-02T14:33:42-04:00
 subtitle: ""
 tags: ["Research"]
-dropCap: true
+dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false

@@ -3,7 +3,7 @@ title: "euROBIN Demo"
 date: 2023-08-02T14:33:42-04:00
 subtitle: ""
 tags: ["Research"]
-dropCap: true
+dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false

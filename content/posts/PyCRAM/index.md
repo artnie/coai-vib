@@ -3,7 +3,7 @@ title: "PyCRAM"
 date: 2023-02-02T14:33:42-04:00
 subtitle: ""
 tags: ["Subsystem"]
-dropCap: true
+dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false

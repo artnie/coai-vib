@@ -3,7 +3,7 @@ title: "RoboKudo"
 date: 2023-03-02T14:33:42-04:00
 subtitle: ""
 tags: ["Subsystem"]
-dropCap: true
+dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false

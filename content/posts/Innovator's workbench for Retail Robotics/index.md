@@ -3,7 +3,7 @@ title: "Innovator's workbench for Retail Robotics"
 date: 2023-06-02T14:33:42-04:00
 subtitle: ""
 tags: ["Innovation"]
-dropCap: true
+dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false
