@@ -52,11 +52,9 @@ Example Videos
 Publications
 ---
 
-- [TODOPaper1](TODOPaperLink1)\
-  TODOShortPaperAbstarction1
+- [Gayane Kazhoyan, Simon Stelter, Franklin Kenghagho Kenfack, Sebastian Koralewski and Michael Beetz, "The Robot Household Marathon Experiment", In IEEE International Conference on Robotics and Automation (ICRA), 2021, doi: 10.48550/arXiv.2011.09792](https://arxiv.org/abs/2011.09792)
 
-- [TODOPaper2](TODOPaperLink2)\
-  TODOShortPaperAbstarction1
+- [Gayane Kazhoyan, Arthur Niedzwiecki and Michael Beetz, "Towards Plan Transformations for Real-World Mobile Fetch and Place," 2020 IEEE International Conference on Robotics and Automation (ICRA), Paris, France, 2020, pp. 11011-11017, doi: 10.1109/ICRA40945.2020.9197446](https://ieeexplore.ieee.org/document/9197446)\
 
 
 Software Components
@@ -92,24 +90,18 @@ Courses and/or Turorial
 
 - ### Courses:
 
-  + ##### [TODOCourse](TODOCoursesLink1)
-    TODOCoursesDescription1
+  + ##### [Integrated Intelligent Systems](https://ai.uni-bremen.de/teaching/le-iis-ws23)
+    This lecture covers contemporary techniques of AI in cognitive robotics.
 
-  + ##### [TODOCourse2](TODOCoursesLink2)
-    TODOCoursesDescription2
+  + ##### [Robot Programming with ROS](https://ai.uni-bremen.de/teaching/cs-ros-ws23)
+    Getting into the Robot Operating System ROS is a steptone for future roboticists.
+
+  + ##### [SUTURO - sudo tidy-up-my-room](https://ai.uni-bremen.de/teaching/pr-suturo-ws23)
+    Students in this project design their own application to run on a real robot.
+
 
 - ### Tutorials:
 
-  + ##### [TODOTutorial1](TODOTuorialLink1)
-    TODOTutorialDescription1
+  + ##### [CRAM Plan Executive](https://cram-system.org/tutorials)
+    Check out the online hands-on tutorials on the CRAM plan executive.
 
-  + ##### [TODOTutorial2](TODOTuorialLink2)
-    TODOTutorialDescription2
-
-
-Notes
----
-
-- TODOAdditionalInformation1
-
-- TODOAdditionalInformation2
