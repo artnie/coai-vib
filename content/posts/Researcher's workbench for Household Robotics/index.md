@@ -1,6 +1,6 @@
 ---
 title: "Researcher's workbench for Household Robotics"
-date: 2023-10-03T10:35:35-05:00
+date: 2023-12-01T10:35:35-05:00
 subtitle: "Household Robotics Workbench."
 tags: ["Research"]
 dropCap: false
@@ -23,8 +23,6 @@ This project deals with the problem of teaching robots how to execute unknown ta
 ![](https://iris.informatik.uni-bremen.de/textbook/content/picking_up_actions.png)
 
 ***"The EASE household challenge is subject of the IEEE spectrum article 'It's (Still) Really Hard for Robots to Autonomously Do Household Chores'"*** by Evan Ackerman (IEEE Spectrum, 17.06.2021)
-
-TODOShortIntroTextAndOrQuote
 
 
 Interactive Actions and/or Examples

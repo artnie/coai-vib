@@ -48,7 +48,7 @@ pygmentsCodefencesGuessSyntax = true
 [Author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   website = "https://ai.uni-bremen.de/"
-  email = "info@coai-jrc.de"
+  email = "ai-office@cs.uni-bremen.de"
   github = "IntEL4CoRo"
   youtube = "agkiunibremen"
 
@@ -58,6 +58,6 @@ pygmentsCodefencesGuessSyntax = true
     weight = 1
 
 [[menu.main]]
-    name = "About"
-    url = "page/about/"
+    name = "Contact"
+    url = "page/contact/"
     weight = 2
