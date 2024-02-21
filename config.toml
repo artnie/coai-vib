@@ -1,4 +1,4 @@
-baseurl = "https://intel4coro.github.io/coai-vib/"
+baseurl = "coai-vib/"
 DefaultContentLanguage = "en"
 title = "Virtual Research Building (ViB)"
 theme = "beautifulhugo"
