@@ -1,25 +1,22 @@
 ---
-title: "Food Cutting Robots"
-date: 2023-09-02T14:33:42-04:00
+title: "Using Web Knowledge For Flexible Meal Preparation"
+date: 2024-02-27T14:33:42-04:00
 subtitle: ""
 tags: ["Research"]
 dropCap: false
 displayInMenu: false
 displayInList: true
 draft: false
+resources:
+- name: ActionButtons
+  src: "buttons.json"
 ---
 
-This project deals with the problem of teaching robots how to execute unknown tasks in the household domain. The focus of this repository lies on the task of Cutting Food, especially fruits and vegetables.
+This project deals with the problem of teaching robots how to execute a wide range of meal preparation tasks. For this, we first focus on the task of <b>Cutting Food</b>. We propose to access Web knowledge to teach robots how to perform a variety of cutting actions on a range ob objects.
+<a href="https://food-ninja.github.io/FoodCutting/">On this website</a> you can get more information and an idea on how a robot would parameterise action plans to execute meal preparation tasks.
 
-You can
-<a class="btn btn-success" target="_blank" href="https://food-ninja.github.io/FoodCutting/Webinterface.html"><b>try out the web interface</b></a>
-to get an idea on how a robot would parameterise cutting actions.
-
-<div class="hidde-after-preview">
-<a class="btn btn-primary" disabled target="_blank">Run Simulation</a>
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2Fnotebooks%2FFoodCuttingQueries.ipynb">Inspect Knowledge Graph</a>
-<a class="btn btn-success" target="_blank" href="https://github.com/Food-Ninja/FoodCutting">Source Code</a>
-</div>
+<param class="hidde-after-preview">
+{{<action_form data="ActionButtons">}}
 
 <!--more-->
 
@@ -27,8 +24,6 @@ to get an idea on how a robot would parameterise cutting actions.
 Interactive Actions and/or Examples
 ---
 
-<div>
-<a class="btn btn-primary" disabled target="_blank">Run Simulation</a>
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/Food-Ninja/FoodCutting.git/HEAD?urlpath=notebooks%2Fnotebooks%2FFoodCuttingQueries.ipynb">Inspect Knowledge Graph</a>
-<a class="btn btn-success" target="_blank" href="https://github.com/Food-Ninja/FoodCutting">Source Code</a>
-</div>
+{{<action_form data="ActionButtons">}}
+
+</br>

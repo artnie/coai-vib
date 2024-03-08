@@ -1,6 +1,6 @@
-baseurl = "https://intel4coro.github.io/coai-vib/"
+baseurl = "coai-vib/"
 DefaultContentLanguage = "en"
-title = "CoAI-ViB"
+title = "Virtual Research Building (ViB)"
 theme = "beautifulhugo"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true
@@ -12,12 +12,12 @@ pygmentsCodefencesGuessSyntax = true
   unsafe = true # Allow HTML in md files
 
 [Params]
- homeTitle = "Interactive Research Space" # Set a different text for the header on the home page
-  subtitle = "Research Challenge Laboratories"
+ homeTitle = "Our virtual research and training building for cognition-enabled robotics" # Set a different text for the header on the home page
+  subtitle = ""
   mainSections = ["posts"]
   logo = "img/logo.png" # Expecting square dimensions
   favicon = "favicon.ico"
-  dateFormat = "January 2, 2006"
+  dateFormat = "2 January 2006"
   commit = false
   rss = false
   comments = false
@@ -48,16 +48,11 @@ pygmentsCodefencesGuessSyntax = true
 [Author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   website = "https://ai.uni-bremen.de/"
-  email = "info@coai-jrc.de"
+  email = "ai-office@cs.uni-bremen.de"
   github = "IntEL4CoRo"
   youtube = "agkiunibremen"
 
 [[menu.main]]
-    name = ""
-    url = ""
+    name = "Contact"
+    url = "page/contact/"
     weight = 1
-
-[[menu.main]]
-    name = "About"
-    url = "page/about/"
-    weight = 2

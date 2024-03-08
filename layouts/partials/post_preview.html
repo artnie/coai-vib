@@ -15,6 +15,7 @@
         </video>
         {{ end }}
     </a>
+
     <p class="post-meta">
         {{ partial "post_meta.html" . }}
     </p>
@@ -26,6 +27,7 @@
         {{ .Content }}
         {{ end }}
     </div>
+
     {{ if .Params.tags }}
     <div class="blog-tags">
         {{ range .Params.tags }}
