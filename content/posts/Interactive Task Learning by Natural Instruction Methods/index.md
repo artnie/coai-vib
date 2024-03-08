@@ -16,7 +16,9 @@ For more information, you can
 <a class="btn btn-success" target="_blank" href="https://ease-crc.github.io/itl/"><b>visit the webpage</b></a> of Interactive Task Learning to get a better idea on how a robot can learn from different teaching methodologies.
 
 <div class="hidde-after-preview">
-<a class="btn btn-primary" target="_blank" href="https://binder.intel4coro.de/v2/gh/AbhijitVyas/pycram.git/binder?urlpath=lab%2Ftree%2Fexamples%2Fboostrapping_instructions.ipynb">Run code</a>
+<a class="btn btn-primary" target="_blank" href="https://jupyter.intel4coro.de/user/abhijitvyas-boo-ng_with_giskard-apgp2ikm/lab/tree/RTC%3Anotebooks/bootstrapping_pouring_example.ipynb">Run code</a>
+
+
 <a class="btn btn-success" target="_blank" href="https://github.com/AbhijitVyas/pycram/tree/binder">Source Code</a>
 </div>
 
